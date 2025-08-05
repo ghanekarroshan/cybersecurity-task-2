@@ -33,13 +33,14 @@ Step 2: Red Flags Observed in the Email Body
 Step 3: Header Analysis (Using MXToolbox)
 
 Tool Used: [MXToolbox Email Header Analyzer](https://mxtoolbox.com/EmailHeaders.aspx)
-| Parameter    | Status                                                                        |
------------------------------------------------------------------------------------------------|
-| SPF          | ✅ PASS (IP 149.72.58.57 is authorized to send on behalf of domain)           |
-| DKIM         |✅ PASS with domain `hackingflix.com`                                          |
-| DMARC        |✅ PASS                                                                         |
-| Relay Info   |IP traced to `SendGrid` service                                                |
-| Blacklist    |⚠️ IP found on blacklist (`149.72.58.57`)     
+| Parameter      | Status                                                                        |
+|----------------|--------------------------------------------------------------------------------|
+| **SPF**        | ✅ PASS (IP 149.72.58.57 is authorized to send on behalf of domain)           |
+| **DKIM**       | ✅ PASS with domain `hackingflix.com`                                          |
+| **DMARC**      | ✅ PASS                                                                         |
+| **Relay Info** | IP traced to `SendGrid` service                                               |
+| **Blacklist**  | ⚠️ IP found on blacklist (`149.72.58.57`)                                      |
+
 ---
 
 Step 4: Analysis Summary
